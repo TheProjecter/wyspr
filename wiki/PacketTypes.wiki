@@ -23,7 +23,7 @@ Used by a host node to tell a potential client node that is trying to connect to
 
 === Data ===
   *Optional
-    * ip - The IP address of another host to connect to. (Optional)
+    * ip - The IP address of another host to connect to.
 
 === Packet Route ===
   * Host to Client
