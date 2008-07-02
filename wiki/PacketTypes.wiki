@@ -8,7 +8,7 @@ This page details the different types of packet used in the Wyspr protocol, the 
 
 = Packets =
 
-== standby ==
+== [standby] ==
 Requests the receiver increase their time-out time, when they are waiting for a response from the sender. The amount of time is generally decided by the sender.
 
 === Packet Route ===
