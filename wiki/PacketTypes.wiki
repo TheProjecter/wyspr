@@ -1,14 +1,26 @@
-#summary One-sentence summary of this page.
+#summary Rundown of the types of packets used by the Wyspr protocol.
 #labels Phase-Design,Phase-Requirements,Phase-Implementation,Featured
 
 = Introduction =
 
-Add your content here.
+This page details the different types of packet used in the Wyspr protocol, the type of node that will send and receive these packets, the usage of the packets, the type of data they contain, and what version(s) of the protocol the packets are used by.
 
 
-= Details =
+= Packets =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+== standby ==
+Requests the receiver increase their time-out time, when they are waiting for a response from the sender. The amount of time is generally decided by the sender.
+
+=== Packet Route ===
+* Client to Host
+* Host to Client
+* Host to Host
+
+== refer ==
+Used by a host node to tell a potential client node that is trying to connect to connect to a different host node. Used if the host node is disproportionately overburdened, has reached the limit it is willing to host to, or otherwise refuses to host the client that is attempting to connect. May be used during chat if the host is disconnecting from the chat, passing the user to a less busy host node, etc.
+
+=== Data ===
+*ip - The IP address of another host to connect to. (Optional)
+
+=== Packet Route ===
+* Host to Client
