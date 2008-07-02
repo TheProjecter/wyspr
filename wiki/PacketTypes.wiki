@@ -8,6 +8,20 @@ This page details the different types of packet used in the Wyspr protocol, the 
 
 = Packets =
 
+== [connectrequest] ==
+Requests to connect to a host node.
+
+=== Packet Route ===
+  * Client to Host
+
+=== Data ===
+  * Required
+    * chat - Name of the chat the client wishes to connect to
+  * Optional
+    * password - Password for the chat
+
+----
+
 == [standby] ==
 Requests the receiver increase their time-out time, when they are waiting for a response from the sender. The amount of time is generally decided by the sender.
 
