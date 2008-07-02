@@ -22,7 +22,8 @@ Requests the receiver increase their time-out time, when they are waiting for a 
 Used by a host node to tell a potential client node that is trying to connect to connect to a different host node. Used if the host node is disproportionately overburdened, has reached the limit it is willing to host to, or otherwise refuses to host the client that is attempting to connect. May be used during chat if the host is disconnecting from the chat, passing the user to a less busy host node, etc.
 
 === Data ===
-  * ip - The IP address of another host to connect to. (Optional)
+  *Optional
+    * ip - The IP address of another host to connect to. (Optional)
 
 === Packet Route ===
   * Host to Client
