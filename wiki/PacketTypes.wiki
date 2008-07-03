@@ -41,3 +41,35 @@ Used by a host node to tell a potential client node that is trying to connect to
 
 === Packet Route ===
   * Host to Client
+
+----
+
+== assignid ==
+Used by a host node to tell a new client node their unique ID, which they must use to communicate with the host node.
+
+=== Data ===
+  * Required
+    * id - The ID number.
+
+=== Packet Route ===
+ * Host to Client
+
+----
+
+== Allow ==
+Response to a _request_  packet of whatever kind, when no additional information is required, and the request was allowed.
+
+=== Packet Route ===
+  * Host to Client
+  * Client to Host
+  * Host to Host
+
+----
+
+== Deny ==
+Response to a _request_  packet of whatever kind, when no additional information is required, and the request was denied.
+
+=== Packet Route ===
+  * Host to Client
+  * Client to Host
+  * Host to Host
