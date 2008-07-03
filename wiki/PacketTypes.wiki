@@ -73,3 +73,29 @@ Response to a _request_  packet of whatever kind, when no additional information
   * Host to Client
   * Client to Host
   * Host to Host
+
+----
+
+== message ==
+Used by a client node to send a message to their host node for broadcast over the network.
+
+=== Data ===
+  * Required
+    * content - The message to be broadcast.
+
+=== Packet Route ===
+  * Client to Host
+
+----
+
+== echo ==
+Used by a host node to pass on a message to its client nodes, and other hosts.
+
+=== Data ===
+  * Required
+    * content - The actual message being echoed.
+    * origin - The username of the original sender.
+
+=== Packet Route ===
+  * Host to Host
+  * Host to Client
