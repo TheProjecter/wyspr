@@ -32,7 +32,7 @@ Requests the receiver increase their time-out time, when they are waiting for a 
 
 ----
 
-== refer ==
+== [refer] ==
 Used by a host node to tell a potential client node that is trying to connect to connect to a different host node. Used if the host node is disproportionately overburdened, has reached the limit it is willing to host to, or otherwise refuses to host the client that is attempting to connect. May be used during chat if the host is disconnecting from the chat, passing the user to a less busy host node, etc.
 
 === Data ===
@@ -44,7 +44,7 @@ Used by a host node to tell a potential client node that is trying to connect to
 
 ----
 
-== assignid ==
+== [assignid] ==
 Used by a host node to tell a new client node their unique ID, which they must use to communicate with the host node.
 
 === Data ===
@@ -56,7 +56,7 @@ Used by a host node to tell a new client node their unique ID, which they must u
 
 ----
 
-== allow ==
+== [allow] ==
 Response to a _request_  packet of whatever kind, when no additional information is required, and the request was allowed.
 
 === Packet Route ===
@@ -76,7 +76,7 @@ Response to a _request_  packet of whatever kind, when no additional information
 
 ----
 
-== message ==
+== [message] ==
 Used by a client node to send a message to their host node for broadcast over the network.
 
 === Data ===
@@ -88,7 +88,7 @@ Used by a client node to send a message to their host node for broadcast over th
 
 ----
 
-== echo ==
+== [echo] ==
 Used by a host node to pass on a message to its client nodes, and other hosts.
 
 === Data ===
