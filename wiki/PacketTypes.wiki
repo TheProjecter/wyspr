@@ -56,7 +56,7 @@ Used by a host node to tell a new client node their unique ID, which they must u
 
 ----
 
-== Allow ==
+== allow ==
 Response to a _request_  packet of whatever kind, when no additional information is required, and the request was allowed.
 
 === Packet Route ===
@@ -66,7 +66,7 @@ Response to a _request_  packet of whatever kind, when no additional information
 
 ----
 
-== Deny ==
+== deny ==
 Response to a _request_  packet of whatever kind, when no additional information is required, and the request was denied.
 
 === Packet Route ===
