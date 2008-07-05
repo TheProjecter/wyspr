@@ -1,4 +1,5 @@
 #summary Version One is the current primary goal of the Wyspr project, being the first theoretically usable version of the protocol.
+#labels Featured,Phase-Requirements,Phase-Design
 
 = Introduction =
 
