@@ -99,3 +99,15 @@ Used by a host node to pass on a message to its client nodes, and other hosts.
 === Packet Route ===
   * Host to Host
   * Host to Client
+
+----
+
+== [referrequest] ==
+Requests a host node accept a new client node. Used by a host node to request another host node accept a new client node, for example if the sender is highly overburdened, has reached their personal client node limit, etc.
+
+=== Packet Route ===
+  * Host to Host
+
+=== Data ===
+  * Optional
+    * reason - Reason the host node wishes to refer.
