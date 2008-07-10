@@ -81,3 +81,44 @@ elementFormDefault="qualified">
 	</xs:element>
 </xs:schema>
 }}}
+
+=  =
+
+{{{
+<?xml version="1.0" encoding="UTF-8"?>
+<gateway xmlns="http://wyspr.s4t4n.net/gateway" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://wyspr.s4t4n.net/gateway http://wyspr.s4t4n.net/gateway/wyspr-gateway_0.1.xsd">
+	<meta>
+		<name>Name Of The Chat</name>
+		<description>Here is a short description of what the chat is about.</description>
+		<website><!-- Primary associated website of the chat -->
+			<name>Name of the Site</name>
+			<url>URL of the website</url>
+		</website>
+		<location><!-- Location of this file -->
+			<primary>http://www.example.com/file.xml</primary>
+			<alternatives>
+				<url>http://www.example.com/alt1.xml</url>
+				<url>http://www.example.com/alt2.xml</url>
+			</alternatives>
+		</location>
+		<tags>
+			<tag>some</tag>
+			<tag>keywords</tag>
+		</tags>
+	</meta>
+	<hosts>
+		<host id="PotentialHost">
+			<ip>127.0.0.1</ip>
+		</host>
+		<host id="user123">
+			<ip>172.65.123.89</ip>
+		</host>
+		<host id="AnotherHost">
+			<ip>67.0.28.4</ip>
+		</host>
+		<host id="SomeHost">
+			<ip>27.3.2.8</ip>
+		</host>
+	</hosts>
+</gateway>
+}}}
