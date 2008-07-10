@@ -1,4 +1,4 @@
-#summary Rundown of the types of [Packet packets] used by the Wyspr protocol.
+#summary Rundown of the types of packets used by the Wyspr protocol.
 #labels Phase-Design,Phase-Requirements,Phase-Implementation,Featured
 
 = Introduction =
