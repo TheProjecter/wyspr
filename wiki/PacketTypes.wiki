@@ -1,9 +1,9 @@
-#summary Rundown of the types of packets used by the Wyspr protocol.
+#summary Rundown of the types of [Packet packets] used by the Wyspr protocol.
 #labels Phase-Design,Phase-Requirements,Phase-Implementation,Featured
 
 = Introduction =
 
-This page details the different types of packet used in the Wyspr protocol, the type of node that will send and receive these packets, the usage of the packets, the type of data they contain, and what version(s) of the protocol the packets are used by.
+This page details the different types of [Packet packet] used in the Wyspr protocol, the type of node that will send and receive these packets, the usage of the packets, the type of data they contain, and what version(s) of the protocol the packets are used by.
 
 
 = Packets =
