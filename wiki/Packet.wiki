@@ -1,0 +1,44 @@
+#summary A Packet is the basic 'envelope' the contains data that is used by the protocol for communication.
+#labels Phase-Requirements,Phase-Design,Phase-Implementation
+
+= Introduction =
+
+There are many different [PacketTypes packet types] used in the Wyspr protocol. All of them are based on the same XML-based template. This wiki entry provides the schema for that template, and some example packets. See the page '[PacketTypes]', of the Packet Types file in the downloads section, for more details on specific packet types.
+
+
+= Schema v0.3 =
+
+{{{
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://wyspr.s4t4n.net/packet"
+xmlns="http://wyspr.s4t4n.net/packet"
+elementFormDefault="qualified">
+	<xs:element name="packet">
+		<xs:complexType>
+			<xs:sequence maxOccurs="1" minOccurs="1">
+				<xs:element name="data" maxOccurs="1" minOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="type" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+}}}
+
+= Example '[echo]' Packet =
+
+{{{
+<?xml version="1.0" encoding="UTF-8"?>
+<packet type="echo" xmlns="http://wyspr.s4t4n.net/packet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://wyspr.s4t4n.net/packet http://wyspr.s4t4n.net/packet/wyspr-packet_0.2.xsd">
+	<data>
+		<origin>GameFreak7744</origin>
+		<content>This message goes out to everybody connected!</content>
+	</data>
+</packet>
+}}}
