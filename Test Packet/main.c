@@ -3,7 +3,11 @@
 #include <string.h>
 #include "packet_struct.h"
 
-#define PACKET_OVERHEAD 270 //38 = <packet type=""><data></data></packet>
+#define PACKET_OVERHEAD 270
+/* 270 =
+<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<packet type=""><data></data></packet>
+*/
 #define DATA_OVERHEAD 15 //15 = <d type=""></d>
 
 #define XML_TAG "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
@@ -62,7 +66,6 @@ void packet_add_data(struct packet *pack, char *name, char *value)
 	(*y)->value = value;
 	(*y)->size = DATA_OVERHEAD + strlen(name) + strlen(value);
 	
-	//--CALCULATE TOTAL SIZE--
 	packet_size += (*y)->size;
 	pack->total_size = PACKET_OVERHEAD + packet_size;
 	
@@ -76,9 +79,6 @@ void data_print(struct data x)
 	printf("\">");
 	printf(x.value);
 	printf("</d>");
-	/*char buffer[3];
-	sprintf(buffer, "(%d)", x.size);
-	printf(buffer);*/
 }
 
 void packet_output(struct packet *pack, char **buffer)

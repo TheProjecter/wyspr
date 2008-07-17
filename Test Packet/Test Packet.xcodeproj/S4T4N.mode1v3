@@ -276,8 +276,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -301,7 +299,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>821 223 1002 785 0 0 1920 1178 </string>
+						<string>741 347 1002 785 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -338,7 +336,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {794, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>821 223 1002 785 0 0 1920 1178 </string>
+								<string>741 347 1002 785 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -360,7 +358,7 @@
 								<key>Frame</key>
 								<string>{{0, 5}, {794, 739}}</string>
 								<key>RubberWindowFrame</key>
-								<string>821 223 1002 785 0 0 1920 1178 </string>
+								<string>741 347 1002 785 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -384,9 +382,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>42D5DD070E2FC6930077CBDD</string>
+				<string>42D5DD220E2FD2420077CBDD</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>42D5DD080E2FC6930077CBDD</string>
+				<string>42D5DD230E2FD2420077CBDD</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -520,11 +518,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>42D5DD2B0E2FD27B0077CBDD</string>
 		<string>42D5DA5E0E2E70390077CBDD</string>
 		<string>/Developer/Projects/Wyspr/SVN/trunk/Test Packet/Test Packet.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>821 223 1002 785 0 0 1920 1178 </string>
+	<string>741 347 1002 785 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -601,7 +600,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>42D5DA5E0E2E70390077CBDD</string>
-				<string>42D5DD090E2FC6930077CBDD</string>
+				<string>42D5DD280E2FD2620077CBDD</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
