@@ -70,7 +70,7 @@ int main (int argc, const char * argv[])
 void packet_create(struct packet *pack, char *name)
 {
 	pack->name = malloc(strlen(name)+1);
-	stpcpy(pack->name, name);
+	strcpy(pack->name, name);
 	pack->entry_count = 0;
 	pack->total_size = PACKET_OVERHEAD + strlen(name);
 }
@@ -146,7 +146,7 @@ void packet_free(struct packet *pack)
 		struct data **z = y;
 		y = &(*y)->next;
 		//free((*z)->name);
-		printf((*y)->name);
+		//printf((*y)->name);
 		//printf(pack->entry->name);
 		//free((*z)->value);
 		//free(*z);
