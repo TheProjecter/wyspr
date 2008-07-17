@@ -123,6 +123,8 @@
 			42D5DD3F0E2FFA910077CBDD /* PBXTextBookmark */ = 42D5DD3F0E2FFA910077CBDD /* PBXTextBookmark */;
 			42D5DD4D0E2FFDB50077CBDD /* PBXTextBookmark */ = 42D5DD4D0E2FFDB50077CBDD /* PBXTextBookmark */;
 			42D5DD4E0E2FFDB50077CBDD /* PBXTextBookmark */ = 42D5DD4E0E2FFDB50077CBDD /* PBXTextBookmark */;
+			42D5DD570E2FFF110077CBDD /* PBXTextBookmark */ = 42D5DD570E2FFF110077CBDD /* PBXTextBookmark */;
+			42D5DD580E2FFF110077CBDD /* PBXTextBookmark */ = 42D5DD580E2FFF110077CBDD /* PBXTextBookmark */;
 		};
 		sourceControlManager = 42D5DA4F0E2E6F7E0077CBDD /* Source Control */;
 		userBuildSettings = {
@@ -131,8 +133,8 @@
 	08FB7796FE84155DC02AAC07 /* main.c */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {800, 2212}}";
-			sepNavSelRange = "{13, 0}";
-			sepNavVisRange = "{0, 1527}";
+			sepNavSelRange = "{4124, 0}";
+			sepNavVisRange = "{3352, 872}";
 			sepNavWindowFrame = "{{821, 136}, {769, 935}}";
 		};
 	};
@@ -143,7 +145,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -200,7 +202,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
 		name = "main.c: 121";
 		rLen = 0;
-		rLoc = 4141;
+		rLoc = 4143;
 		rType = 0;
 		vrLen = 1519;
 		vrLoc = 0;
@@ -214,7 +216,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
 		name = "main.c: 122";
 		rLen = 0;
-		rLoc = 4146;
+		rLoc = 4148;
 		rType = 0;
 		vrLen = 870;
 		vrLoc = 2144;
@@ -224,7 +226,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
 		name = "main.c: 121";
 		rLen = 0;
-		rLoc = 4122;
+		rLoc = 4124;
 		rType = 0;
 		vrLen = 870;
 		vrLoc = 2144;
@@ -258,6 +260,26 @@
 		rType = 0;
 		vrLen = 1527;
 		vrLoc = 0;
+	};
+	42D5DD570E2FFF110077CBDD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
+		name = "main.c: 2";
+		rLen = 0;
+		rLoc = 13;
+		rType = 0;
+		vrLen = 1527;
+		vrLoc = 0;
+	};
+	42D5DD580E2FFF110077CBDD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
+		name = "main.c: 149";
+		rLen = 0;
+		rLoc = 4124;
+		rType = 0;
+		vrLen = 872;
+		vrLoc = 3352;
 	};
 	8DD76FA90486AB0100D96B5E /* Test Packet */ = {
 		activeExec = 0;
