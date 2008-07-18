@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>42D5DDD40E30766E0077CBDD</string>
+						<string>42D5DDDD0E3078250077CBDD</string>
 						<key>history</key>
 						<array>
 							<string>42D5DD570E2FFF110077CBDD</string>
@@ -256,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>42D5DDD50E30766E0077CBDD</string>
+						<string>42D5DDDE0E3078250077CBDD</string>
 						<key>history</key>
 						<array>
 							<string>42D5DDB30E3074560077CBDD</string>
@@ -605,8 +605,8 @@
 		<string>42D5DD420E2FFA910077CBDD</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>42D5DA5E0E2E70390077CBDD</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Developer/Projects/Wyspr/SVN/trunk/Test Packet/Test Packet.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>42D5DDCE0E3076600077CBDD</string>
 		<string>42D5DD2F0E2FF97A0077CBDD</string>
 	</array>

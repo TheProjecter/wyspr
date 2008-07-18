@@ -127,9 +127,7 @@ int packet_size(struct packet *pack)
 	struct data *y = pack->entry;
 	while(y)
 	{
-		size += strlen(y->name);
-		size += strlen(y->value);
-		size += DATA_OVERHEAD;
+		size += data_size(y);
 		y = y->next;
 	}
 	return size;
