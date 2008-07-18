@@ -35,9 +35,18 @@ struct data
 };
 
 
+int data_size(struct data *x)
+{
+	int size = 0;
+	size += DATA_OVERHEAD;
+	size += strlen(x->name);
+	size += strlen(x->value);
+	return size;
+}
+
 void data_output(struct data *x, char **buffer)
 {
-	*buffer = malloc(DATA_OVERHEAD + strlen(x->name) + strlen(x->value) + 1);
+	*buffer = malloc(data_size(x) + 1);
 	strcat(*buffer, "<d type=\"");
 	strcat(*buffer, x->name);
 	strcat(*buffer, "\">");
