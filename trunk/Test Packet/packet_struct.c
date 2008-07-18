@@ -2,7 +2,7 @@
  *  packet_struct.c
  *  Test Packet
  *
- *  Created by Joey Sabey on 16/07/08.
+ *  Created by Joey Sabey on 18/07/08.
  *  Copyright (c) 2008 Joey Sabey, et al.
  *
  *  Permission is hereby granted, free of charge, to any person obtaining a copy

@@ -250,7 +250,7 @@
 	42D5DA510E2E6FA60077CBDD /* data_struct.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {684, 801}}";
-			sepNavSelRange = "{1198, 0}";
+			sepNavSelRange = "{59, 0}";
 			sepNavVisRange = "{0, 1398}";
 			sepNavWindowFrame = "{{100, 166}, {743, 929}}";
 		};
@@ -258,7 +258,7 @@
 	42D5DA520E2E6FB20077CBDD /* packet_struct.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {834, 798}}";
-			sepNavSelRange = "{37, 1174}";
+			sepNavSelRange = "{68, 0}";
 			sepNavVisRange = "{0, 1840}";
 			sepNavWindowFrame = "{{951, 186}, {893, 814}}";
 		};
@@ -528,7 +528,7 @@
 		rLen = 0;
 		rLoc = 1398;
 		rType = 0;
-		vrLen = 78;
+		vrLen = 75;
 		vrLoc = 1323;
 	};
 	42D5DDC50E3076310077CBDD /* PBXTextBookmark */ = {
@@ -538,7 +538,7 @@
 		rLen = 0;
 		rLoc = 1398;
 		rType = 0;
-		vrLen = 78;
+		vrLen = 75;
 		vrLoc = 1323;
 	};
 	42D5DDCA0E30763C0077CBDD /* PBXTextBookmark */ = {
@@ -548,7 +548,7 @@
 		rLen = 0;
 		rLoc = 1398;
 		rType = 0;
-		vrLen = 78;
+		vrLen = 75;
 		vrLoc = 1323;
 	};
 	42D5DDD00E3076600077CBDD /* PBXTextBookmark */ = {
@@ -558,7 +558,7 @@
 		rLen = 0;
 		rLoc = 1398;
 		rType = 0;
-		vrLen = 1401;
+		vrLen = 1398;
 		vrLoc = 0;
 	};
 	42D5DDD10E3076600077CBDD /* PBXTextBookmark */ = {
@@ -588,7 +588,7 @@
 		rLen = 0;
 		rLoc = 1398;
 		rType = 0;
-		vrLen = 1401;
+		vrLen = 1398;
 		vrLoc = 0;
 	};
 	42D5DDDD0E3078250077CBDD /* PBXTextBookmark */ = {
@@ -608,7 +608,7 @@
 		rLen = 0;
 		rLoc = 1398;
 		rType = 0;
-		vrLen = 1401;
+		vrLen = 1398;
 		vrLoc = 0;
 	};
 	42D5DDDF0E30789F0077CBDD /* PBXBookmark */ = {
@@ -657,8 +657,8 @@
 	};
 	42D5DDED0E309E750077CBDD /* data_struct.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {798, 672}}";
-			sepNavSelRange = "{1214, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {798, 658}}";
+			sepNavSelRange = "{71, 0}";
 			sepNavVisRange = "{0, 1511}";
 			sepNavWindowFrame = "{{1027, 273}, {857, 713}}";
 		};
@@ -729,14 +729,14 @@
 		rLen = 0;
 		rLoc = 1398;
 		rType = 0;
-		vrLen = 1401;
+		vrLen = 1398;
 		vrLoc = 0;
 	};
 	42D5DE030E30A1300077CBDD /* packet_struct.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {798, 1414}}";
-			sepNavSelRange = "{1216, 0}";
-			sepNavVisRange = "{0, 1574}";
+			sepNavIntBoundsRect = "{{0, 0}, {632, 2016}}";
+			sepNavSelRange = "{2863, 19}";
+			sepNavVisRange = "{1705, 358}";
 			sepNavWindowFrame = "{{176, 313}, {857, 713}}";
 		};
 	};
