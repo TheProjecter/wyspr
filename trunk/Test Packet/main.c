@@ -73,18 +73,17 @@ void packet_create(struct packet *pack, char *name)
 	strcpy(pack->name, name);
 	pack->entry_count = 0;
 	pack->total_size = PACKET_OVERHEAD + strlen(name);
+	pack->entry = NULL;
 }
 
 void packet_add_data(struct packet *pack, char *name, char *value)
 {
 	int packet_size = 0;
-	int x = 0;
 	struct data **y = &pack->entry;
-	while(x < pack->entry_count)
+	while(*y)
 	{
 		packet_size += (*y)->size;
 		y = &(*y)->next;
-		x++;
 	}
 	
 	*y = malloc(sizeof(struct data));
@@ -93,6 +92,7 @@ void packet_add_data(struct packet *pack, char *name, char *value)
 	(*y)->value = malloc(strlen(value)+1);
 	(*y)->value = value;
 	(*y)->size = DATA_OVERHEAD + strlen(name) + strlen(value);
+	(*y)->next = NULL;
 	
 	packet_size += (*y)->size;
 	pack->total_size = PACKET_OVERHEAD + packet_size;
@@ -120,9 +120,8 @@ void packet_output(struct packet *pack, char **buffer)
 	strcat(*buffer, "\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"");
 	strcat(*buffer, SCHEMA_LOC);
 	strcat(*buffer, "\"><data>");
-	int x = 0;
 	struct data *y = pack->entry;
-	while(x < pack->entry_count)
+	while(y)
 	{
 		strcat(*buffer, "<d type=\"");
 		strcat(*buffer, y->name);
@@ -130,7 +129,6 @@ void packet_output(struct packet *pack, char **buffer)
 		strcat(*buffer, y->value);
 		strcat(*buffer, "</d>");
 		y = y->next;
-		x++;
 	}
 	strcat(*buffer, "</data></packet>");
 	//printf(buffer);
@@ -139,17 +137,18 @@ void packet_output(struct packet *pack, char **buffer)
 void packet_free(struct packet *pack)
 {
 	free(pack->name);
-	int x = 0;
+	pack->name = NULL;
 	struct data *y = pack->entry;
-	while(x < pack->entry_count)
+	while(y)
 	{
 		struct data *z = y;
 		y = y->next;
 		printf(z->name);
 		free(z->name);
+		z->name = NULL;
 		printf(z->value);
 		free(z->value);
+		z->value = NULL;
 		free(z);
-		x++;
 	}
 }
