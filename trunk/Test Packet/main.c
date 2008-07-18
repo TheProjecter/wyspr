@@ -121,15 +121,15 @@ void packet_output(struct packet *pack, char **buffer)
 	strcat(*buffer, SCHEMA_LOC);
 	strcat(*buffer, "\"><data>");
 	int x = 0;
-	struct data **y = &pack->entry;
+	struct data *y = pack->entry;
 	while(x < pack->entry_count)
 	{
 		strcat(*buffer, "<d type=\"");
-		strcat(*buffer, (*y)->name);
+		strcat(*buffer, y->name);
 		strcat(*buffer, "\">");
-		strcat(*buffer, (*y)->value);
+		strcat(*buffer, y->value);
 		strcat(*buffer, "</d>");
-		y = &(*y)->next;
+		y = y->next;
 		x++;
 	}
 	strcat(*buffer, "</data></packet>");
@@ -140,16 +140,16 @@ void packet_free(struct packet *pack)
 {
 	free(pack->name);
 	int x = 0;
-	struct data **y = &pack->entry;
+	struct data *y = pack->entry;
 	while(x < pack->entry_count)
 	{
-		struct data **z = y;
-		y = &(*y)->next;
-		//free((*z)->name);
-		//printf((*y)->name);
-		//printf(pack->entry->name);
-		//free((*z)->value);
-		//free(*z);
+		struct data *z = y;
+		y = y->next;
+		printf(z->name);
+		free(z->name);
+		printf(z->value);
+		free(z->value);
+		free(z);
 		x++;
 	}
 }
