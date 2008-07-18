@@ -181,6 +181,14 @@
 			42D5DDE50E30797F0077CBDD /* PBXTextBookmark */ = 42D5DDE50E30797F0077CBDD /* PBXTextBookmark */;
 			42D5DDE70E307ABA0077CBDD /* PBXTextBookmark */ = 42D5DDE70E307ABA0077CBDD /* PBXTextBookmark */;
 			42D5DDE80E307ABA0077CBDD /* PBXTextBookmark */ = 42D5DDE80E307ABA0077CBDD /* PBXTextBookmark */;
+			42D5DDF40E309F700077CBDD /* PBXBookmark */ = 42D5DDF40E309F700077CBDD /* PBXBookmark */;
+			42D5DDF50E309FE70077CBDD /* PBXTextBookmark */ = 42D5DDF50E309FE70077CBDD /* PBXTextBookmark */;
+			42D5DDF60E309FE70077CBDD /* PBXTextBookmark */ = 42D5DDF60E309FE70077CBDD /* PBXTextBookmark */;
+			42D5DDF70E309FE70077CBDD /* PBXTextBookmark */ = 42D5DDF70E309FE70077CBDD /* PBXTextBookmark */;
+			42D5DDF80E309FE70077CBDD /* PBXTextBookmark */ = 42D5DDF80E309FE70077CBDD /* PBXTextBookmark */;
+			42D5DDFC0E309FFD0077CBDD /* PBXTextBookmark */ = 42D5DDFC0E309FFD0077CBDD /* PBXTextBookmark */;
+			42D5DDFD0E309FFD0077CBDD /* PBXTextBookmark */ = 42D5DDFD0E309FFD0077CBDD /* PBXTextBookmark */;
+			42D5DE000E309FFD0077CBDD /* PBXTextBookmark */ = 42D5DE000E309FFD0077CBDD /* PBXTextBookmark */;
 		};
 		sourceControlManager = 42D5DA4F0E2E6F7E0077CBDD /* Source Control */;
 		userBuildSettings = {
@@ -188,10 +196,10 @@
 	};
 	08FB7796FE84155DC02AAC07 /* main.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {798, 756}}";
-			sepNavSelRange = "{1689, 0}";
-			sepNavVisRange = "{508, 1194}";
-			sepNavWindowFrame = "{{821, 136}, {769, 935}}";
+			sepNavIntBoundsRect = "{{0, 0}, {798, 824}}";
+			sepNavSelRange = "{1598, 0}";
+			sepNavVisRange = "{569, 1133}";
+			sepNavWindowFrame = "{{106, 457}, {857, 713}}";
 		};
 	};
 	42D5DA440E2E6F5F0077CBDD /* Test Packet */ = {
@@ -236,8 +244,8 @@
 	42D5DA510E2E6FA60077CBDD /* data_struct.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {684, 801}}";
-			sepNavSelRange = "{1541, 0}";
-			sepNavVisRange = "{0, 1690}";
+			sepNavSelRange = "{1401, 0}";
+			sepNavVisRange = "{0, 1401}";
 			sepNavWindowFrame = "{{1123, 96}, {743, 929}}";
 		};
 	};
@@ -493,8 +501,8 @@
 		isa = PBXTextBookmark;
 		comments = "warning: no return statement in function returning non-void";
 		fRef = 42D5DA510E2E6FA60077CBDD /* data_struct.h */;
-		rLen = 1;
-		rLoc = 54;
+		rLen = 0;
+		rLoc = 36;
 		rType = 1;
 	};
 	42D5DDBD0E3075D80077CBDD /* PBXTextBookmark */ = {
@@ -511,8 +519,8 @@
 		isa = PBXTextBookmark;
 		fRef = 42D5DA510E2E6FA60077CBDD /* data_struct.h */;
 		name = "data_struct.h: 51";
-		rLen = 1;
-		rLoc = 1689;
+		rLen = 0;
+		rLoc = 1401;
 		rType = 0;
 		vrLen = 365;
 		vrLoc = 1323;
@@ -521,8 +529,8 @@
 		isa = PBXTextBookmark;
 		fRef = 42D5DA510E2E6FA60077CBDD /* data_struct.h */;
 		name = "data_struct.h: 51";
-		rLen = 1;
-		rLoc = 1689;
+		rLen = 0;
+		rLoc = 1401;
 		rType = 0;
 		vrLen = 365;
 		vrLoc = 1323;
@@ -531,8 +539,8 @@
 		isa = PBXTextBookmark;
 		fRef = 42D5DA510E2E6FA60077CBDD /* data_struct.h */;
 		name = "data_struct.h: 51";
-		rLen = 1;
-		rLoc = 1689;
+		rLen = 0;
+		rLoc = 1401;
 		rType = 0;
 		vrLen = 365;
 		vrLoc = 1323;
@@ -542,7 +550,7 @@
 		fRef = 42D5DA510E2E6FA60077CBDD /* data_struct.h */;
 		name = "data_struct.h: 44";
 		rLen = 0;
-		rLoc = 1662;
+		rLoc = 1401;
 		rType = 0;
 		vrLen = 1587;
 		vrLoc = 0;
@@ -572,7 +580,7 @@
 		fRef = 42D5DA510E2E6FA60077CBDD /* data_struct.h */;
 		name = "data_struct.h: 44";
 		rLen = 0;
-		rLoc = 1662;
+		rLoc = 1401;
 		rType = 0;
 		vrLen = 1587;
 		vrLoc = 0;
@@ -592,7 +600,7 @@
 		fRef = 42D5DA510E2E6FA60077CBDD /* data_struct.h */;
 		name = "data_struct.h: 49";
 		rLen = 0;
-		rLoc = 1541;
+		rLoc = 1401;
 		rType = 0;
 		vrLen = 1690;
 		vrLoc = 0;
@@ -639,6 +647,82 @@
 		rLoc = 1556;
 		rType = 0;
 		vrLen = 1842;
+		vrLoc = 0;
+	};
+	42D5DDED0E309E750077CBDD /* data_struct.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {798, 585}}";
+			sepNavSelRange = "{247, 0}";
+			sepNavVisRange = "{0, 580}";
+		};
+	};
+	42D5DDF40E309F700077CBDD /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 42D5DA510E2E6FA60077CBDD /* data_struct.h */;
+	};
+	42D5DDF50E309FE70077CBDD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 42D5DA510E2E6FA60077CBDD /* data_struct.h */;
+		name = "data_struct.h: 40";
+		rLen = 0;
+		rLoc = 1401;
+		rType = 0;
+		vrLen = 344;
+		vrLoc = 1021;
+	};
+	42D5DDF60E309FE70077CBDD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: conflicting types for 'data_size'";
+		fRef = 42D5DDED0E309E750077CBDD /* data_struct.c */;
+		rLen = 1;
+		rLoc = 14;
+		rType = 1;
+	};
+	42D5DDF70E309FE70077CBDD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 42D5DA510E2E6FA60077CBDD /* data_struct.h */;
+		name = "data_struct.h: 40";
+		rLen = 0;
+		rLoc = 1401;
+		rType = 0;
+		vrLen = 344;
+		vrLoc = 1021;
+	};
+	42D5DDF80E309FE70077CBDD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 42D5DDED0E309E750077CBDD /* data_struct.c */;
+		name = "data_struct.c: 15";
+		rLen = 2;
+		rLoc = 243;
+		rType = 0;
+		vrLen = 164;
+		vrLoc = 187;
+	};
+	42D5DDFC0E309FFD0077CBDD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 42D5DDED0E309E750077CBDD /* data_struct.c */;
+		rLen = 0;
+		rLoc = 2147484055;
+		rType = 0;
+	};
+	42D5DDFD0E309FFD0077CBDD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 42D5DDED0E309E750077CBDD /* data_struct.c */;
+		name = "data_struct.c: 16";
+		rLen = 0;
+		rLoc = 247;
+		rType = 0;
+		vrLen = 580;
+		vrLoc = 0;
+	};
+	42D5DE000E309FFD0077CBDD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 42D5DA510E2E6FA60077CBDD /* data_struct.h */;
+		name = "data_struct.h: 38";
+		rLen = 0;
+		rLoc = 1401;
+		rType = 0;
+		vrLen = 1401;
 		vrLoc = 0;
 	};
 	8DD76FA90486AB0100D96B5E /* Test Packet */ = {
