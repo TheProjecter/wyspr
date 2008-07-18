@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42D5DDEE0E309E750077CBDD /* data_struct.c in Sources */ = {isa = PBXBuildFile; fileRef = 42D5DDED0E309E750077CBDD /* data_struct.c */; };
+		42D5DE040E30A1300077CBDD /* packet_struct.c in Sources */ = {isa = PBXBuildFile; fileRef = 42D5DE030E30A1300077CBDD /* packet_struct.c */; };
 		8DD76FAC0486AB0100D96B5E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* Test Packet.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* Test Packet.1 */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		42D5DA510E2E6FA60077CBDD /* data_struct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = data_struct.h; path = "Projects/Wyspr/SVN/trunk/Test Packet/data_struct.h"; sourceTree = DEVELOPER_DIR; };
 		42D5DA520E2E6FB20077CBDD /* packet_struct.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; indentWidth = 3; name = packet_struct.h; path = "Projects/Wyspr/SVN/trunk/Test Packet/packet_struct.h"; sourceTree = DEVELOPER_DIR; tabWidth = 3; };
 		42D5DDED0E309E750077CBDD /* data_struct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = data_struct.c; path = "Projects/Wyspr/SVN/trunk/Test Packet/data_struct.c"; sourceTree = DEVELOPER_DIR; };
+		42D5DE030E30A1300077CBDD /* packet_struct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = packet_struct.c; path = "Projects/Wyspr/SVN/trunk/Test Packet/packet_struct.c"; sourceTree = DEVELOPER_DIR; };
 		8DD76FB20486AB0100D96B5E /* Test Packet */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Test Packet"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* Test Packet.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "Test Packet.1"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +50,6 @@
 		08FB7794FE84155DC02AAC07 /* Test Packet */ = {
 			isa = PBXGroup;
 			children = (
-				42D5DDED0E309E750077CBDD /* data_struct.c */,
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6A0FF2B0290797F04C91782 /* Documentation */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
@@ -59,6 +60,8 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				42D5DE030E30A1300077CBDD /* packet_struct.c */,
+				42D5DDED0E309E750077CBDD /* data_struct.c */,
 				42D5DA520E2E6FB20077CBDD /* packet_struct.h */,
 				42D5DA510E2E6FA60077CBDD /* data_struct.h */,
 				08FB7796FE84155DC02AAC07 /* main.c */,
@@ -127,6 +130,7 @@
 			files = (
 				8DD76FAC0486AB0100D96B5E /* main.c in Sources */,
 				42D5DDEE0E309E750077CBDD /* data_struct.c in Sources */,
+				42D5DE040E30A1300077CBDD /* packet_struct.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
