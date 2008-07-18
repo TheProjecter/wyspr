@@ -36,7 +36,6 @@
 <?xml version=\"1.0\" encoding=\"UTF-8\"?>
 <packet type=""><data></data></packet>
 */
-#define DATA_OVERHEAD 15 //15 = <d type=""></d>
 
 #define XML_TAG "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
 #define XMLNS "http://wyspr.s4t4n.net/packet"
@@ -44,8 +43,8 @@
 
 void packet_create(struct packet *pack, char *name);
 void packet_add_data(struct packet *pack, char *name, char *value);
-void data_print(struct data x);
 void packet_output(struct packet *pack, char **buffer);
+int packet_size(struct packet *pack);
 void packet_free(struct packet *pack);
 
 int main (int argc, const char * argv[])
@@ -57,10 +56,12 @@ int main (int argc, const char * argv[])
 	packet_add_data(&ptest, "origin", "GameFreak7744");
 	
 	char *cpack;
-	//cpack = malloc((ptest.total_size)+1);
 	packet_output(&ptest, &cpack);
 	printf(cpack);
 	
+	char *cdata;
+	data_output(ptest.entry, &cdata);
+	printf(cdata);
 	
 	packet_free(&ptest);
    return 0;
@@ -72,17 +73,14 @@ void packet_create(struct packet *pack, char *name)
 	pack->name = malloc(strlen(name)+1);
 	strcpy(pack->name, name);
 	pack->entry_count = 0;
-	pack->total_size = PACKET_OVERHEAD + strlen(name);
 	pack->entry = NULL;
 }
 
 void packet_add_data(struct packet *pack, char *name, char *value)
 {
-	int packet_size = 0;
 	struct data **y = &pack->entry;
 	while(*y)
 	{
-		packet_size += (*y)->size;
 		y = &(*y)->next;
 	}
 	
@@ -91,27 +89,14 @@ void packet_add_data(struct packet *pack, char *name, char *value)
 	(*y)->name = name;
 	(*y)->value = malloc(strlen(value)+1);
 	(*y)->value = value;
-	(*y)->size = DATA_OVERHEAD + strlen(name) + strlen(value);
 	(*y)->next = NULL;
-	
-	packet_size += (*y)->size;
-	pack->total_size = PACKET_OVERHEAD + packet_size;
 	
 	pack->entry_count++;
 }
 
-void data_print(struct data x)
-{
-	printf("<d type=\"");
-	printf(x.name);
-	printf("\">");
-	printf(x.value);
-	printf("</d>");
-}
-
 void packet_output(struct packet *pack, char **buffer)
 {
-	*buffer = malloc((pack->total_size)+1);
+	*buffer = malloc(packet_size(pack)+1);
 	strcat(*buffer, XML_TAG);
 	strcat(*buffer, "<packet type=\"");
 	strcat(*buffer, pack->name);
@@ -132,6 +117,22 @@ void packet_output(struct packet *pack, char **buffer)
 	}
 	strcat(*buffer, "</data></packet>");
 	//printf(buffer);
+}
+
+int packet_size(struct packet *pack)
+{
+	int size = 0;
+	size += strlen(pack->name);
+	size += PACKET_OVERHEAD;
+	struct data *y = pack->entry;
+	while(y)
+	{
+		size += strlen(y->name);
+		size += strlen(y->value);
+		size += DATA_OVERHEAD;
+		y = y->next;
+	}
+	return size;
 }
 
 void packet_free(struct packet *pack)

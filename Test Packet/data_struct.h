@@ -24,11 +24,23 @@
  *  THE SOFTWARE.
  *
  */
+ 
+#define DATA_OVERHEAD 15 //15 = <d type=""></d>
 
 struct data
 {
  char *name;
  char *value;
- int size;
  struct data *next;
 };
+
+
+void data_output(struct data *x, char **buffer)
+{
+	*buffer = malloc(DATA_OVERHEAD + strlen(x->name) + strlen(x->value) + 1);
+	strcat(*buffer, "<d type=\"");
+	strcat(*buffer, x->name);
+	strcat(*buffer, "\">");
+	strcat(*buffer, x->value);
+	strcat(*buffer, "</d>");
+}

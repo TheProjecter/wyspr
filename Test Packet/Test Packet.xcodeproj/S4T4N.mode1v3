@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>42D5DDA10E306DD70077CBDD</string>
+						<string>42D5DDD40E30766E0077CBDD</string>
 						<key>history</key>
 						<array>
 							<string>42D5DD570E2FFF110077CBDD</string>
@@ -231,11 +231,51 @@
 			<key>Geometry</key>
 			<dict>
 				<key>Frame</key>
-				<string>{{0, 20}, {859, 616}}</string>
+				<string>{{0, 20}, {857, 616}}</string>
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>106 513 859 657 0 0 1920 1178 </string>
+				<string>106 513 857 657 0 0 1920 1178 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>42D5DDCE0E3076600077CBDD</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>data_struct.h</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>42D5DDCF0E3076600077CBDD</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>data_struct.h</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>42D5DDD50E30766E0077CBDD</string>
+						<key>history</key>
+						<array>
+							<string>42D5DDB30E3074560077CBDD</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {743, 832}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>1123 152 743 873 0 0 1920 1178 </string>
 			</dict>
 		</dict>
 	</array>
@@ -565,8 +605,9 @@
 		<string>42D5DD420E2FFA910077CBDD</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>42D5DA5E0E2E70390077CBDD</string>
-		<string>/Developer/Projects/Wyspr/SVN/trunk/Test Packet/Test Packet.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>/Developer/Projects/Wyspr/SVN/trunk/Test Packet/Test Packet.xcodeproj</string>
+		<string>42D5DDCE0E3076600077CBDD</string>
 		<string>42D5DD2F0E2FF97A0077CBDD</string>
 	</array>
 	<key>WindowString</key>
@@ -586,14 +627,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>main.c</string>
+								<string>data_struct.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -610,6 +649,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -916,7 +957,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {723, 353}}</string>
 								<key>RubberWindowFrame</key>
-								<string>889 204 723 394 0 0 1920 1178 </string>
+								<string>891 204 723 394 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -945,7 +986,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>889 204 723 394 0 0 1920 1178 </string>
+			<string>891 204 723 394 0 0 1920 1178 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
