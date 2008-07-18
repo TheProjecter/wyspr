@@ -202,46 +202,6 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>42D5DDE20E30797F0077CBDD</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>packet_struct.h</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>42D5DDE30E30797F0077CBDD</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>packet_struct.h</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>42D5DDE40E30797F0077CBDD</string>
-						<key>history</key>
-						<array>
-							<string>42D5DDDF0E30789F0077CBDD</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {893, 717}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>951 242 893 758 0 0 1920 1178 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
 				<string>42D5DD2F0E2FF97A0077CBDD</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>main.c</string>
@@ -256,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>42D5DDE50E30797F0077CBDD</string>
+						<string>42D5DDE70E307ABA0077CBDD</string>
 						<key>history</key>
 						<array>
 							<string>42D5DD570E2FFF110077CBDD</string>
@@ -276,6 +236,46 @@
 				<false/>
 				<key>RubberWindowFrame</key>
 				<string>106 513 857 657 0 0 1920 1178 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>42D5DDE20E30797F0077CBDD</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>packet_struct.h</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>42D5DDE30E30797F0077CBDD</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>packet_struct.h</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>42D5DDE80E307ABA0077CBDD</string>
+						<key>history</key>
+						<array>
+							<string>42D5DDDF0E30789F0077CBDD</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {893, 717}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>951 242 893 758 0 0 1920 1178 </string>
 			</dict>
 		</dict>
 	</array>
@@ -607,8 +607,8 @@
 		<string>42D5DA5E0E2E70390077CBDD</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>/Developer/Projects/Wyspr/SVN/trunk/Test Packet/Test Packet.xcodeproj</string>
-		<string>42D5DD2F0E2FF97A0077CBDD</string>
 		<string>42D5DDE20E30797F0077CBDD</string>
+		<string>42D5DD2F0E2FF97A0077CBDD</string>
 	</array>
 	<key>WindowString</key>
 	<string>791 290 1002 785 0 0 1920 1178 </string>

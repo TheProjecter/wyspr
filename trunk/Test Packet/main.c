@@ -33,7 +33,7 @@
 
 int main (int argc, const char * argv[])
 {
-   struct packet ptest;
+	struct packet ptest;
 	
 	packet_create(&ptest, "echo");
 	packet_add_data(&ptest, "content", "This message goes out to everybody connected!");
@@ -48,6 +48,6 @@ int main (int argc, const char * argv[])
 	printf(cdata);
 	
 	packet_free(&ptest);
-   return 0;
+	return 0;
 }
 
