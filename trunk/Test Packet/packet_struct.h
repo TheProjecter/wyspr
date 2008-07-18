@@ -32,5 +32,4 @@ struct packet
  char *name;
  struct data *entry;
  int entry_count;
- int total_size;
 };
