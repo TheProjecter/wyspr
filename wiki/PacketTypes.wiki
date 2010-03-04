@@ -25,6 +25,10 @@ Requests to connect to a host node.
 == [standby] ==
 Requests the receiver increase their time-out time, when they are waiting for a response from the sender. The amount of time is generally decided by the sender.
 
+=== Data ===
+  * Required
+    * ref - The reference number of the original request package.
+
 === Packet Route ===
   * Client to Host
   * Host to Client
@@ -59,6 +63,10 @@ Used by a host node to tell a new client node their unique ID, which they must u
 == [allow] ==
 Response to a _request_  packet of whatever kind, when no additional information is required, and the request was allowed.
 
+=== Data ===
+  * Required
+    * ref - The reference number of the original request package.
+
 === Packet Route ===
   * Host to Client
   * Client to Host
@@ -68,6 +76,10 @@ Response to a _request_  packet of whatever kind, when no additional information
 
 == deny ==
 Response to a _request_  packet of whatever kind, when no additional information is required, and the request was denied.
+
+=== Data ===
+  * Required
+    * ref - The reference number of the original request package.
 
 === Packet Route ===
   * Host to Client
@@ -102,8 +114,30 @@ Used by a host node to pass on a message to its client nodes, and other hosts.
 
 ----
 
+== [queryload] ==
+Used, when a host node is concerned with the client load it is hosting, to query the other hosts to check if their load is suitably lighter to refer a client node. A referrequest should not be sent unless the sending host node would still have a higher proportional load after referral, to prevent ping-ponging the client node between host nodes. Reply should be a loaddata packet.
+
+=== Packet Route ===
+  * Host to Host
+
+----
+
+== [loaddata] ==
+Used to reply to a _queryload_ packet.
+
+=== Data ===
+  * Required
+    * ref - The reference number of the original query.
+    * currentload - The number of clients currently connected.
+    * maxload - The maximum number of clients the host will allow.
+
+=== Packet Route ===
+  * Host to Host
+
+----
+
 == [referrequest] ==
-Requests a host node accept a new client node. Used by a host node to request another host node accept a new client node, for example if the sender is highly overburdened, has reached their personal client node limit, etc.
+Requests a host node accept a new client node. Used by a host node to request another host node accept a new client node, for example if the sender is highly overburdened, has reached their personal client node limit, etc. Response should be an _allow_ or _deny_ packet.
 
 === Packet Route ===
   * Host to Host
